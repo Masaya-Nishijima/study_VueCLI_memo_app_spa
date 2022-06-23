@@ -14,10 +14,9 @@
 <script>
 export default {
   name: 'MemoIndex',
-  data() {
-
+  props: {
+    memoTitles: Object
   },
-  props: ['memoTitles'],
   methods:{
     edit(index) {
       this.$emit('edit-start', index)

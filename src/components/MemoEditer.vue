@@ -25,7 +25,10 @@
 import MemoIndex from './MemoIndex.vue'
 export default {
   name: 'MemoEditer',
-  props: ['editMemoJSON', 'memoTitles'],
+  props: {
+    editMemoJSON: JSON,
+    memoTitles: Object
+  },
   components: {
     MemoIndex
   },
