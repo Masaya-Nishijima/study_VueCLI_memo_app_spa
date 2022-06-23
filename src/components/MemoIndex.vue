@@ -4,7 +4,7 @@
       v-for="(memoTitle, index) in memoTitles"
       :key="memoTitle.id"
     >
-      <button @click="edit(index)">
+      <button @click="memoEdit(index)">
         {{memoTitle}}
       </button>
     </li>
@@ -18,7 +18,7 @@ export default {
     memoTitles: Object
   },
   methods:{
-    edit(index) {
+    memoEdit(index) {
       this.$emit('edit-start', index)
     }
   }
