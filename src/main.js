@@ -1,6 +1,4 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import TestTest from './TestVueCLI.vue'
+import MemoApp from './MemoApp.vue'
 
-createApp(App).mount('#app')
-createApp(TestTest).mount('#test')
+createApp(MemoApp).mount('#memo-app')
