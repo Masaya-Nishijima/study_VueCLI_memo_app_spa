@@ -38,7 +38,7 @@ export default {
   },
   created() {
     this.memos = JSON.parse(localStorage.getItem('memo-app'))
-    this.checkHavePlus()
+    this.memos == null ? this.memos = [{title: '+', body: ''}] : this.memos.push({title: '+', body: ''})
   },
   components: {
     MemoIndex,
