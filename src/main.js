@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import MemoApp from './MemoApp.vue'
 
-createApp(App).mount('#app')
+createApp(MemoApp).mount('#memo-app')
