@@ -35,7 +35,11 @@ export default {
   computed: {
     editMemo:{
       get() {
-        return JSON.parse(this.editMemoJSON)
+        let memo = JSON.parse(this.editMemoJSON)
+        if (memo.title === '+') {
+          memo.title = ''
+        }
+        return memo
       }
     }
   },
